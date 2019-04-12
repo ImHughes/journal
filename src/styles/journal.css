@@ -1,0 +1,20 @@
+body {
+    background-color:white;
+ }
+ 
+ header {
+    background-color:gray;
+ 
+ }
+ h1{
+    color:black;
+ }
+ 
+ 
+ fieldset {
+    background-color: lightgrey;
+ }
+ 
+ button {
+    background-color:gray;
+ }
