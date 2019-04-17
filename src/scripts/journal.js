@@ -1,10 +1,4 @@
-const objectsJournalEnter = {
-    date: "04/10/2019",
-    Concepts: "html",
-    entry: "I learned html today",
-    mood: "happy"
- };
- 
+
  const JournalEntry = [
     {
         date: "04/11/2019",
@@ -25,6 +19,40 @@ const objectsJournalEnter = {
         mood: "happy"
     }
  ]
- 
+
+    const jEntry = document.querySelector(".jEntry");
+
  JournalEntry.push();
  console.log("JournalEntry", JournalEntry);
+
+ const showJournalEntry = (JournalEntry)
+        /*
+    Purpose: To create, and return, a string template that
+    represents a single journal entry object as HTML
+
+    Arguments: journalEntry (object)
+*/
+const makeJournalEntryComponent = (journalEntry) => {
+    return `
+    <h1>${journalEntry.date}</h1>
+    <h1>${journalEntry.Concepts}</h1>
+    <p>${journalEntry.entry}<h1>
+    <p>${journalEntry.mood}</p>
+    
+    ` 
+    
+}
+const renderJournalEntrys = (entrys) =>{
+    entrys.forEach(entry => {
+      item = makeJournalEntryComponent(entry)
+      jEntry.innerHTML += item  
+    });
+}
+renderJournalEntrys(JournalEntry)
+    
+    
+    
+
+
+    
+    
